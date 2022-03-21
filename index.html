@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Guest room
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <center>
+            <div role="row">
+                <hr>
+                <h1>Guest list</h1>
+                <br>
+                <br>
+                <button type="button" id="add" onclick="show()">Add</button>
+                <input type="text" placeholder="The guest name" id="guest_name" style="display: none;">
+                <br>
+                <br>
+                <button type="submit" id="submit" onclick="add()" style="display: none;">Submit</button>
+                <hr>
+            </div>
+            <hr>
+            <div id="display_name"></div>
+            <hr>
+            <div>
+                <h1>Guest name</h1>
+                <br>
+                <br>
+                <button id="show_button>" onclick="so()">Show</button>
+                <br>
+                <div id="display_name_as_a_coloum"></div>
+            </div>
+            <hr>
+            <div>
+                <button type="button" id="sorter" onclick="sort()">Sort the list</button>
+            </div>
+            <hr>
+            <div id="sorted-list"></div>
+            <hr>
+            <div role="row">
+                <input type="text" placeholder="Name of the guest already entered" id="text">
+                <button type="submit" onclick="search()">Search</button>
+            </div>
+            <div id="search-items"></div>
+        </center>
+    </body>
+</html>
